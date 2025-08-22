@@ -1,0 +1,74 @@
+/* Fondo de pantalla */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Contenedor central */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* altura completa de la ventana */
+    background-color: rgba(0,0,0,0.6); /* overlay para contraste */
+    padding: 20px;
+}
+
+/* Encabezado */
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.encabezado h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #ffffff; /* color llamativo */
+}
+
+/* Galería con Flexbox */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+/* Cada item de la galería */
+.galeria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #b1a29d;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(50,50,50,0.8);
+    transition: transform 0.3s;
+}
+
+.galeria-item img {
+    width: 200px;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.galeria-item p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+}
